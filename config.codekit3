@@ -50,6 +50,19 @@
       "oAP" : "\/deploy\/html\/thank.html",
       "oF" : 0
     },
+    "\/deploy\/img\/Cirles.png" : {
+      "ft" : 32768,
+      "iS" : 426,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Cirles.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/divider-1-image.png" : {
       "ft" : 32768,
       "iS" : 187821,
@@ -247,6 +260,19 @@
       "iS" : 10310,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Rectangle.png" : {
+      "ft" : 32768,
+      "iS" : 163,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Rectangle.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
