@@ -1,7 +1,93 @@
 /* =============
-    Typography
+    Hero
 ============= */
 
-body{
-    font-family: 'Open Sans', sans-serif;
+.Hero{
+   
+        
+    font-family: 'Orienta', sans-serif;
+   
+    .background{
+    background-image: url('../img/Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   }
+    
+   
+   
+   
+    .container{
+        display:grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas:
+        ". content ."
+        ;
+
+        
+        
+    }
+    
+    
+    
+       
+    .content{
+        grid-area:content; 
+        padding-right: 16px;
+       
+    }
+
+
+    ul{
+           
+        li{
+            display: inline-block;
+
+            padding-right: 8px;
+            color: white;
+            
+            margin-left: 0;
+            
+
+            
+        }
+    }
+
+    .hero-content{
+        color: $white;
+
+        p{
+            margin-bottom: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10px;
+            
+        }
+
+        h2{
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        h4{
+            font-size: 14px;
+            margin-top: -1px;
+        }
+
+        a{
+            color: black;
+            background-color: $white;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            align-self: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+
+        }
+    }
+
 }
+

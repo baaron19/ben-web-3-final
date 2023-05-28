@@ -355,11 +355,18 @@ textarea {
 /* =============
     Footer
 ============= */
-/* =============
-    Typography
-============= */
-body {
-  font-family: "Open Sans", sans-serif;
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: ". content .";
+}
+footer .content {
+  grid-area: content;
+}
+footer ul li {
+  display: inline-block;
+  padding-right: 8px;
+  color: black;
 }
 
 /* =============
@@ -374,6 +381,62 @@ body {
 ============= */
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+/* =============
+    Hero
+============= */
+.Hero {
+  font-family: "Orienta", sans-serif;
+}
+.Hero .background {
+  background-image: url("../img/Hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Hero .container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: ". content .";
+}
+.Hero .content {
+  grid-area: content;
+  padding-right: 16px;
+}
+.Hero ul li {
+  display: inline-block;
+  padding-right: 8px;
+  color: white;
+  margin-left: 0;
+}
+.Hero .hero-content {
+  color: #fff;
+}
+.Hero .hero-content p {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+}
+.Hero .hero-content h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.Hero .hero-content h4 {
+  font-size: 14px;
+  margin-top: -1px;
+}
+.Hero .hero-content a {
+  color: black;
+  background-color: #fff;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-self: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 20px;
 }
 
 /* =============

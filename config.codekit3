@@ -385,6 +385,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Socials.png" : {
+      "ft" : 32768,
+      "iS" : 1158,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Socials.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Stars.png" : {
       "ft" : 32768,
       "iS" : 596,
