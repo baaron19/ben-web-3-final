@@ -19,7 +19,7 @@
    
     .container{
         display:grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 40% 60%;
         grid-template-areas:
         ". content ."
         ;
@@ -33,25 +33,34 @@
        
     .content{
         grid-area:content; 
-        padding-right: 16px;
+        padding-right: 12px;
        
     }
 
-
-    ul{
+     ul{
            
-        li{
-            display: inline-block;
-
-            padding-right: 8px;
-            color: white;
+            li{
+                display: inline-block;
+    
+                padding-right: 8px;
+                color: white;
+                align-content: right;
+                list-style: none;
             
-            margin-left: 0;
-            
-
-            
+                img{
+                    height: 20px;
+                    width: 20px;
+                    margin-top: 5px;
+                    @include xl{
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+    
+                
+            }
         }
-    }
+    
 
     .hero-content{
         color: $white;
@@ -66,6 +75,7 @@
         h2{
             font-size: 16px;
             margin-bottom: 4px;
+            margin-top: 35px;
         }
 
         h4{
@@ -87,6 +97,9 @@
             border-radius: 20px;
 
         }
+        
+
+       
     }
 
 }

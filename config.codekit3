@@ -50,6 +50,46 @@
       "oAP" : "\/deploy\/html\/thank.html",
       "oF" : 0
     },
+    "\/deploy\/img\/black_icon_facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/black_icon_facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/black_icon_instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/black_icon_instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/black_icon_twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/black_icon_twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/black_icon_youtube_.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/black_icon_youtube_.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/Cirles.png" : {
       "ft" : 32768,
       "iS" : 426,
@@ -180,6 +220,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/icon_facebook_.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon_facebook_.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/icon_facebook.png" : {
       "ft" : 32768,
       "iS" : 681,
@@ -229,6 +279,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/icon_Twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon_Twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/icon_visa_card_.png" : {
       "ft" : 32768,
       "iS" : 1722,
@@ -241,6 +301,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/img\/icon_youtube_.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon_youtube_.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/icon_youtube.png" : {
       "ft" : 32768,
