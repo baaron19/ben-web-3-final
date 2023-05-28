@@ -1,7 +1,87 @@
 /* =============
-    Typography
+    Divider
 ============= */
 
-body{
-    font-family: 'Open Sans', sans-serif;
-}
+   .divider{
+     
+       .divider-articles{
+            
+            list-style: none;
+            display: grid;
+            grid-template-columns: 30px auto 30px;
+            grid-template-areas: 
+            ". articles .";
+
+
+            ul.article-grid{ 
+                
+                @include xl{
+                    display: grid;
+                   grid-template-columns: repeat(6,1fr);
+                   grid-template-areas: 
+                   "a1 a1 a2 a2 a3 a3"
+                }
+                
+                li{
+                    
+                    
+                    list-style: none;
+                     
+                    padding-left: 0;
+                
+                    h3{
+                        font-size: 27px;
+                        }
+        
+                        p{
+                            font-size: 16px;
+                            padding-bottom: 8px;
+                        }
+                    .container{
+                          
+                        @include xl{
+                           grid-template-columns: 15px auto 15px;
+                        }
+                    }  
+                
+                    &.article-1{
+                          
+                        grid-area: a1;
+                        margin-bottom: 16px;
+                        background-color: $light-brown;
+                        padding-bottom: 16px;
+                    }  
+      
+                    &.article-2{
+                         
+                        grid-area: a2;
+                        margin-bottom: 16px;
+                        background-color: $light-brown;
+                        padding-bottom: 32px;
+                    }  
+      
+                    &.article-3{
+                        
+                        grid-area: a3;
+                         
+                        margin-bottom: 16px;
+                        background-color: $light-brown;
+                        padding-bottom: 32px;
+                          
+                          
+                    }  
+                    
+                   
+
+                    
+                }
+
+
+                
+                
+                 
+            }
+            
+        }
+   }
+    
