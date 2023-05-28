@@ -23,7 +23,14 @@
         grid-template-areas:
         ". content ."
         ;
-
+ 
+        @include xl{
+            display:grid;
+           grid-template-columns: 50% 50%;
+           grid-template-areas:
+           ". content ."
+        ;
+        }
         
         
     }
@@ -34,6 +41,10 @@
     .content{
         grid-area:content; 
         padding-right: 12px;
+
+        @include xl{
+            margin-right: 20px;
+        }
        
     }
 
@@ -69,6 +80,10 @@
             margin-bottom: 20px;
             font-family: 'Open Sans', sans-serif;
             font-size: 10px;
+
+            @include xl{
+                font-size: 20px;
+            }
             
         }
 
@@ -76,11 +91,19 @@
             font-size: 16px;
             margin-bottom: 4px;
             margin-top: 35px;
+            
+            @include xl{
+                font-size: 42px;
+            }
         }
 
         h4{
             font-size: 14px;
             margin-top: -1px;
+            
+            @include xl{
+                font-size: 30px;
+            }
         }
 
         a{
