@@ -479,6 +479,49 @@ body {
 /* =============
     Typography
 ============= */
-body {
-  font-family: "Open Sans", sans-serif;
+.reviews .background {
+  background-image: url("../img/reviews-background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+.reviews .container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+.reviews .content {
+  grid-area: content;
+}
+.reviews .content a {
+  color: black;
+  background-color: #E2B073;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  align-self: center;
+}
+.reviews .content form {
+  display: grid;
+  height: 85px;
+  margin-bottom: 20px;
+}
+.reviews .content form input {
+  background-color: #C7C6CB;
+}
+.reviews .content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews .leave-a-review {
+  background-color: white;
+  padding-bottom: 15px;
+  margin-top: 15px;
 }
