@@ -408,8 +408,8 @@ footer .content h4 {
 @media (min-width: 1200px) {
   .divider .divider-articles ul.article-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "a1 a2 a3";
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "a1 a1 a2 a2 a3 a3";
   }
 }
 .divider .divider-articles ul.article-grid a {
