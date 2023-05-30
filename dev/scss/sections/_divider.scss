@@ -7,15 +7,6 @@
         
 
        .divider-articles{
-            
-            .content{
-
-                list-style: none;
-                display: grid;
-                grid-template-columns: 30px auto 30px;
-                grid-template-areas: 
-                ". articles .";
-            }
                 
              
 
@@ -42,6 +33,7 @@
 
                 
                 
+                
                 li{
                     
                     
@@ -60,9 +52,18 @@
                     
                     .container{
                           
-                        @include xl{
-                           grid-template-columns: 15px auto 15px;
-                        }
+                        
+
+                        
+
+                        list-style: none;
+                        display: grid;
+                        grid-template-areas: 
+                         ". article .";
+
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        
                     }  
                 
                     &.article-1{
@@ -71,6 +72,7 @@
                         margin-bottom: 16px;
                         background-color: $light-brown;
                         padding-bottom: 16px;
+                        margin-right: 32PX;
                         
                         @include xl{
                             margin-right: 65px;
@@ -83,6 +85,7 @@
                         margin-bottom: 16px;
                         background-color: $light-brown;
                         padding-bottom: 32px;
+                        margin-right: 32PX;
 
                         @include xl{
                             margin-right: 65px;
@@ -96,7 +99,7 @@
                         margin-bottom: 16px;
                         background-color: $light-brown;
                         padding-bottom: 32px;
-                          
+                        margin-right: 32PX;
                           
                     }  
                     

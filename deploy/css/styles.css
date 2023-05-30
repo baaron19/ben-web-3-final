@@ -399,12 +399,6 @@ footer .content h4 {
 /* =============
     Divider
 ============= */
-.divider .divider-articles .content {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 30px auto 30px;
-  grid-template-areas: ". articles .";
-}
 @media (min-width: 1200px) {
   .divider .divider-articles ul.article-grid {
     display: grid;
@@ -433,16 +427,19 @@ footer .content h4 {
   font-size: 14px;
   padding-bottom: 8px;
 }
-@media (min-width: 1200px) {
-  .divider .divider-articles ul.article-grid li .container {
-    grid-template-columns: 15px auto 15px;
-  }
+.divider .divider-articles ul.article-grid li .container {
+  list-style: none;
+  display: grid;
+  grid-template-areas: ". article .";
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .divider .divider-articles ul.article-grid li.article-1 {
   grid-area: a1;
   margin-bottom: 16px;
   background-color: #C19F7E;
   padding-bottom: 16px;
+  margin-right: 32PX;
 }
 @media (min-width: 1200px) {
   .divider .divider-articles ul.article-grid li.article-1 {
@@ -454,6 +451,7 @@ footer .content h4 {
   margin-bottom: 16px;
   background-color: #C19F7E;
   padding-bottom: 32px;
+  margin-right: 32PX;
 }
 @media (min-width: 1200px) {
   .divider .divider-articles ul.article-grid li.article-2 {
@@ -465,6 +463,7 @@ footer .content h4 {
   margin-bottom: 16px;
   background-color: #C19F7E;
   padding-bottom: 32px;
+  margin-right: 32PX;
 }
 
 /* =============
@@ -522,11 +521,12 @@ footer .content h4 {
 }
 .Hero .content {
   grid-area: content;
-  padding-right: 12px;
+  padding-right: 40px;
 }
 @media (min-width: 1200px) {
   .Hero .content {
-    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 .Hero ul li {
@@ -620,12 +620,13 @@ body {
 @media (min-width: 1200px) {
   .reviews .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-areas: ". content .";
   }
 }
 .reviews .content {
   grid-area: content;
+  padding-top: 20PX;
 }
 .reviews .content a {
   color: black;
