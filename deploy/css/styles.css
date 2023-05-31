@@ -670,13 +670,13 @@ body {
   padding-bottom: 15px;
   margin-top: 15px;
   display: grid;
-  grid-template-columns: 5% 35% 45% 5%;
-  grid-template-areas: " ratings review";
+  grid-template-columns: 10% 35% 45% 10%;
+  grid-template-areas: " ratings review ";
   width: 80%;
 }
-.reviews .leave-a-review.ratings {
+.reviews .leave-a-review .ratings {
   grid-area: ratings;
 }
-.reviews .leave-a-review.review {
+.reviews .leave-a-review .review-image {
   grid-area: review;
 }
