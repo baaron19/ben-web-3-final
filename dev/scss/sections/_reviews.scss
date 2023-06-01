@@ -12,6 +12,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
 
@@ -28,6 +31,8 @@
     .content{
         grid-area:content; 
         padding-top: 20PX; 
+        padding-right: 20px;
+        
 
         a{
             color: black;
@@ -48,12 +53,12 @@
         form{
             
             display: grid;
-            height: 85px;
+            height: 150px;
             margin-bottom: 20px;
             
             
             input{
-                background-color: $light-gray;
+                border-radius: 20px;
             }
             
 
@@ -77,6 +82,10 @@
             font-family: 'Orienta', sans-serif;
         }
         
+        h3{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 30px;
+        }
         
         
     }
@@ -101,6 +110,7 @@
           grid-template-columns: 40% 60%;
           grid-template-areas: " ratings review ";
           width: 80%;
+
         }
         
     }
