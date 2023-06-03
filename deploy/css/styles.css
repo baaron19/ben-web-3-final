@@ -689,6 +689,58 @@ body {
 /* =============
     Typography
 ============= */
+.confirm .confirm-content .container {
+  display: grid;
+  grid-template-columns: 32px auto 32px;
+  grid-template-areas: ". content .";
+}
+.confirm .confirm-content .content {
+  grid-area: content;
+  grid-template-columns: auto;
+}
+.confirm .confirm-content .content h2 {
+  font-size: 24px;
+}
+.confirm .confirm-content .content p {
+  font-size: 16px;
+}
+
 /* =============
-    Typography
+    Checkout
 ============= */
+.cart .background {
+  background-image: url("../img/thank-you-background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .content {
+  grid-area: content;
+}
+.cart .content h2 {
+  font-size: 24px;
+}
+.cart .content p {
+  font-size: 16px;
+}
+.cart .container {
+  display: grid;
+  grid-template-columns: 32px auto 32px;
+  grid-template-areas: ". content .";
+}
+.cart .order-details {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: " orders prices ";
+}
+.cart .order-details .orders {
+  grid-area: orders;
+}
+.cart .order-details .prices {
+  grid-area: prices;
+  text-align: right;
+}

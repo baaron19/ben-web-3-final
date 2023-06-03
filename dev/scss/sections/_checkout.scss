@@ -1,3 +1,62 @@
 /* =============
-    Typography
+    Checkout
 ============= */
+.cart{
+    
+    .background{
+        background-image: url('../img/thank-you-background-image.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .content{
+        grid-area:content;
+
+        h2{
+           font-size: 24px;
+
+        }
+
+        p{
+            font-size: 16px;
+            
+         }
+    
+    }
+    
+    .container{
+        display:grid;
+        grid-template-columns: 32px auto 32px;
+        grid-template-areas:
+        ". content ."
+        ;
+       
+        
+    }
+    
+    .order-details{
+
+        background-color: white;
+
+        .orders{
+           grid-area: orders;
+        }
+
+        .prices{
+            grid-area:prices;
+            text-align: right;
+        }
+
+         
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: " orders prices ";
+       
+    }
+}
+    

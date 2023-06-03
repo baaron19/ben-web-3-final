@@ -1,3 +1,40 @@
 /* =============
     Typography
 ============= */
+
+.confirm{
+    
+    
+
+    .confirm-content{
+       
+        .container{
+            display:grid;
+            grid-template-columns: 32px auto 32px;
+            grid-template-areas:
+            ". content ."
+            ;
+           
+            
+        }
+       
+        .content{
+            grid-area:content;
+            grid-template-columns: auto;
+    
+            h2{
+               font-size: 24px;
+    
+            }
+    
+            p{
+                font-size: 16px;
+                
+             }
+        
+        }
+
+        
+        
+    }
+}
