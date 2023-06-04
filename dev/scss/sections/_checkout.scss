@@ -93,6 +93,7 @@
     .checkout{
         
         margin-right: -32px;
+        margin-top: 150px;
 
         .pay{
             margin-top: 16px;
@@ -101,6 +102,7 @@
                 background-color: white;
                 border-radius: 20px;
                 padding-bottom: 50px;
+                
                 
                 
 
@@ -140,26 +142,121 @@
                 
             }
 
-            display: grid;
-            grid-template-columns: 1fr;
-
+            
         }
 
         .shipping{
-           
+            
+            
+
+            
+
             .content{
                 grid-area:content;
+                margin-left: 16px;
+                border-radius: 20px;
+                background-color: white;
+                padding-left: 32px;
+                padding-right: 32px;
+                padding-bottom: 40px;
+
+                h2{
+                    font-size: 32px; 
+                    
+                }
+
+                form{
+                   margin-top: 70px;
+                   margin-bottom: 50px;
+                   
+                   
+                   input{
+                      width: 535px;
+                      height: 30px;
+                      
+                      
+                   }
+                }
+
+                ::placeholder { /* Microsoft Edge*/
+                    color: $black;
+                    
+                 }
+
+
             }
 
             .container{
-                
+
                 display:grid;
-                grid-template-columns: 16px auto 16px;
+                grid-template-columns: 2px auto 16px;
                 grid-template-areas:
                 ". content ."
                 ;
                 margin-bottom: 16px;
                 
+            }
+        }
+
+        .reviews-checkout{
+            
+            .content{
+               background-color: white;
+               border-radius: 20px;
+               grid-area:content;
+               margin-bottom: 40px;
+
+               padding-right: 50px;
+
+            }
+
+            .container{
+                display:grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas:
+                ". content ."
+                ;
+            }
+            
+        }
+
+        .button-submit{
+            
+            .button{
+               
+                .content{
+                    grid-area:content;
+                    margin-bottom: 120px;
+
+                    
+                    a{
+                        color: $black;
+                        background-color: $gold;
+                        padding-left: 265px;
+                        padding-right: 265px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        align-self: center;
+                        text-decoration: none;
+                        font-size: 24px;
+                        margin-bottom: 15px;
+                        border-radius: 20px;
+                        margin-top: 16px;
+                        
+                        font-family: 'Open Sans', sans-serif;
+                        
+                    }
+                    
+     
+                }
+
+                .container{
+                    display:grid;
+                    grid-template-columns:16px auto 16px;
+                    grid-template-areas:
+                    ". content ."
+                    ;
+                }
             }
         }
     }

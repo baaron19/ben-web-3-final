@@ -779,11 +779,10 @@ body {
 
 .checkout {
   margin-right: -32px;
+  margin-top: 150px;
 }
 .checkout .pay {
   margin-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr;
 }
 .checkout .pay .content {
   grid-area: content;
@@ -819,10 +818,66 @@ body {
 }
 .checkout .shipping .content {
   grid-area: content;
+  margin-left: 16px;
+  border-radius: 20px;
+  background-color: white;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 40px;
+}
+.checkout .shipping .content h2 {
+  font-size: 32px;
+}
+.checkout .shipping .content form {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.checkout .shipping .content form input {
+  width: 535px;
+  height: 30px;
+}
+.checkout .shipping .content ::placeholder { /* Microsoft Edge*/
+  color: #000;
 }
 .checkout .shipping .container {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 2px auto 16px;
   grid-template-areas: ". content .";
   margin-bottom: 16px;
+}
+.checkout .reviews-checkout .content {
+  background-color: white;
+  border-radius: 20px;
+  grid-area: content;
+  margin-bottom: 40px;
+  padding-right: 50px;
+}
+.checkout .reviews-checkout .container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+.checkout .button-submit .button .content {
+  grid-area: content;
+  margin-bottom: 120px;
+}
+.checkout .button-submit .button .content a {
+  color: #000;
+  background-color: #E2B073;
+  padding-left: 265px;
+  padding-right: 265px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-self: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  margin-top: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+.checkout .button-submit .button .container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
 }
