@@ -10,7 +10,7 @@
        
         .container{
             display:grid;
-            grid-template-columns: 32px auto 32px;
+            grid-template-columns: 16px auto 16px;
             grid-template-areas:
             ". content ."
             ;
@@ -20,15 +20,23 @@
        
         .content{
             grid-area:content;
-            grid-template-columns: auto;
-    
+            background-color: white;
+            margin-bottom: 8px;
+            margin-top: 90px;
+            padding-left: 8px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 20px;
+
             h2{
-               font-size: 24px;
-    
+               font-size: 18px;
+               text-align: center;
             }
     
             p{
-                font-size: 16px;
+                font-size: 12px;
+                text-align: center;
+                margin-bottom: 8px;
                 
              }
         

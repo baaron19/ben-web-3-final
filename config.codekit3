@@ -338,6 +338,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/pay.png" : {
+      "ft" : 32768,
+      "iS" : 4920,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pay.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Rectangle.png" : {
       "ft" : 32768,
       "iS" : 163,
