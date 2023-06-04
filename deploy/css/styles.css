@@ -719,9 +719,6 @@ body {
 /* =============
     Checkout
 ============= */
-.cart hr {
-  display: felx;
-}
 .cart .background {
   background-image: url("../img/thank-you-background.png");
   background-size: cover;
