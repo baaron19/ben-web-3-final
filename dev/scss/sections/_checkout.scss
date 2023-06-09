@@ -90,8 +90,8 @@
 
     .checkout{
         
-        margin-right: -32px;
-        margin-top: 150px;
+       
+        padding-top: 150px;
 
         .pay{
             margin-top: 16px;
@@ -151,7 +151,7 @@
 
             .content{
                 grid-area:content;
-                margin-left: 16px;
+                
                 border-radius: 20px;
                 background-color: white;
                 padding-left: 32px;
@@ -187,7 +187,7 @@
             .container{
 
                 display:grid;
-                grid-template-columns: 2px auto 16px;
+                grid-template-columns: 16px auto 16px;
                 grid-template-areas:
                 ". content ."
                 ;
@@ -230,18 +230,18 @@
                     a{
                         color: $black;
                         background-color: $gold;
-                        padding-left: 265px;
-                        padding-right: 265px;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
+                        padding: 20px;
                         align-self: center;
                         text-decoration: none;
                         font-size: 24px;
                         margin-bottom: 15px;
                         border-radius: 20px;
                         margin-top: 16px;
-                        
+                        display: flex;
+                        margin: auto;
+                        justify-content: center;
                         font-family: 'Open Sans', sans-serif;
+
                         
                     }
                     

@@ -22,9 +22,9 @@ footer{
        
     .content{
         grid-area:content;  
-        
+        text-align: center;
         ul{
-           
+            padding-left: 0;
             li{
                 display: inline-block;
                 padding-right: 20px;

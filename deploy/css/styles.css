@@ -415,6 +415,10 @@ footer .container {
 }
 footer .content {
   grid-area: content;
+  text-align: center;
+}
+footer .content ul {
+  padding-left: 0;
 }
 footer .content ul li {
   display: inline-block;
@@ -678,13 +682,13 @@ nav ul {
   nav ul {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: start;
     padding-top: 0;
   }
 }
 nav ul li {
   display: flex;
-  justify-content: flex-end;
+  justify-content: start;
   margin-bottom: 24px;
   text-align: right;
 }
@@ -777,7 +781,6 @@ nav ul li:first-child {
   font-size: 30px;
   padding-top: 0.5px;
   padding-bottom: 0.5px;
-  margin-left: -17px;
   padding-left: 10px;
   font-family: "Orienta", sans-serif;
 }
@@ -892,8 +895,7 @@ nav ul li:first-child {
 }
 
 .checkout {
-  margin-right: -32px;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 .checkout .pay {
   margin-top: 16px;
@@ -932,7 +934,6 @@ nav ul li:first-child {
 }
 .checkout .shipping .content {
   grid-area: content;
-  margin-left: 16px;
   border-radius: 20px;
   background-color: white;
   padding-left: 32px;
@@ -955,7 +956,7 @@ nav ul li:first-child {
 }
 .checkout .shipping .container {
   display: grid;
-  grid-template-columns: 2px auto 16px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
   margin-bottom: 16px;
 }
@@ -978,16 +979,16 @@ nav ul li:first-child {
 .checkout .button-submit .button .content a {
   color: #000;
   background-color: #E2B073;
-  padding-left: 265px;
-  padding-right: 265px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   align-self: center;
   text-decoration: none;
   font-size: 24px;
   margin-bottom: 15px;
   border-radius: 20px;
   margin-top: 16px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
   font-family: "Open Sans", sans-serif;
 }
 .checkout .button-submit .button .container {
