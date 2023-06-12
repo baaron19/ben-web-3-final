@@ -824,6 +824,12 @@ nav ul li:first-child {
 /* =============
     Typography
 ============= */
+.confirm {
+  padding-top: 150px;
+}
+.confirm .confirm-content {
+  font-family: "Open Sans", sans-serif;
+}
 .confirm .confirm-content .container {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -849,13 +855,17 @@ nav ul li:first-child {
   margin-bottom: 8px;
 }
 
-.cart .background {
-  background-image: url("../img/thank-you-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 650px;
+.cart {
+  padding-bottom: 150px;
+}
+@media (min-width: 992px) {
+  .cart {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
 }
 .cart .content {
+  font-family: "Open Sans", sans-serif;
   grid-area: content;
   background-color: white;
   padding-left: 16px;

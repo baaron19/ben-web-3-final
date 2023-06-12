@@ -4,11 +4,12 @@
 
 .confirm{
     
+    padding-top: 150px;
     
     
 
     .confirm-content{
-       
+        font-family: 'Open Sans', sans-serif;
         .container{
             display:grid;
             grid-template-columns: 16px auto 16px;
@@ -49,18 +50,16 @@
 }
 
 .cart{
+    @include lg{
         
-        
-    .background{
-        background-image: url('../img/thank-you-background.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 650px;
-        
-        
+        margin-right: 150px;
+        margin-left: 150px;
     }
+   
+    padding-bottom: 150px;
 
     .content{
+        font-family: 'Open Sans', sans-serif;
         grid-area:content;
         background-color: white;
         padding-left: 16px;
@@ -129,6 +128,8 @@
         display: grid;
         grid-template-columns: 80% 20% ;
         grid-template-areas: " orders cost ";
+
+        
     
     }
 }
