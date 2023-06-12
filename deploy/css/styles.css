@@ -699,6 +699,7 @@ nav ul {
   }
 }
 nav ul li {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: start;
   margin-bottom: 24px;
@@ -1031,6 +1032,7 @@ nav ul li:first-child {
 }
 .checkout .shipping .content {
   grid-area: content;
+  font-family: "Open Sans", sans-serif;
   border-radius: 20px;
   background-color: white;
   padding-left: 32px;
