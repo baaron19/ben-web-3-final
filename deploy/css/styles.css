@@ -848,9 +848,6 @@ nav ul li:first-child {
   margin-bottom: 8px;
 }
 
-/* =============
-    Checkout
-============= */
 .cart .background {
   background-image: url("../img/thank-you-background.png");
   background-size: cover;
@@ -876,6 +873,7 @@ nav ul li:first-child {
   margin-bottom: 16px;
 }
 .cart .order-details {
+  grid-area: order-details;
   background-color: white;
   margin-left: 16px;
   margin-right: 16px;
@@ -906,10 +904,72 @@ nav ul li:first-child {
   padding-right: 8px;
 }
 
+/* =============
+    Checkout
+============= */
 .checkout {
   padding-top: 150px;
 }
+@media (min-width: 992px) {
+  .checkout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "cart cart shipping" "pay pay reviews-checkout" "button button button";
+  }
+}
+.checkout .cart-checkout {
+  grid-area: cart;
+}
+.checkout .cart-checkout .content {
+  grid-area: content;
+  background-color: white;
+  padding-left: 16px;
+  border-radius: 20px;
+}
+.checkout .cart-checkout .content h2 {
+  font-size: 24px;
+}
+.checkout .cart-checkout .content p {
+  font-size: 16px;
+}
+.checkout .cart-checkout .container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+  margin-bottom: 16px;
+}
+.checkout .cart-checkout .order-details {
+  background-color: white;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: " orders cost ";
+}
+.checkout .cart-checkout .order-details hr {
+  display: flex;
+}
+.checkout .cart-checkout .order-details .orders {
+  grid-area: orders;
+}
+.checkout .cart-checkout .order-details .cost {
+  grid-area: cost;
+  text-align: right;
+  padding-right: 16px;
+  padding-top: 65px;
+}
+.checkout .cart-checkout .order-details .cost p {
+  font-size: 16px;
+  padding-bottom: 1.5px;
+  padding-right: 8px;
+}
+.checkout .cart-checkout .order-details .cost h4 {
+  padding-top: 10px;
+  padding-right: 8px;
+}
 .checkout .pay {
+  grid-area: pay;
   margin-top: 16px;
 }
 .checkout .pay .content {
@@ -944,6 +1004,9 @@ nav ul li:first-child {
   grid-template-areas: ". content .";
   margin-bottom: 16px;
 }
+.checkout .shipping {
+  grid-area: shipping;
+}
 .checkout .shipping .content {
   grid-area: content;
   border-radius: 20px;
@@ -972,6 +1035,9 @@ nav ul li:first-child {
   grid-template-areas: ". content .";
   margin-bottom: 16px;
 }
+.checkout .reviews-checkout {
+  grid-area: reviews-checkout;
+}
 .checkout .reviews-checkout .content {
   background-color: white;
   border-radius: 20px;
@@ -983,6 +1049,9 @@ nav ul li:first-child {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
+}
+.checkout .button-submit {
+  grid-area: button;
 }
 .checkout .button-submit .button .content {
   grid-area: content;

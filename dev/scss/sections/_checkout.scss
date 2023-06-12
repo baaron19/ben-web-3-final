@@ -1,101 +1,103 @@
 /* =============
     Checkout
 ============= */
-    .cart{
-        
-        
-        
-        .background{
-            background-image: url('../img/thank-you-background.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 650px;
-            
-            
-        }
-
-        .content{
-            grid-area:content;
-            background-color: white;
-            padding-left: 16px;
-            border-radius: 20px;
-            h2{
-            font-size: 24px;
-            
-            
-            }
-
-            p{
-                font-size: 16px;
-                
-            }
-        
-        }
-        
-        .container{
-            display:grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas:
-            ". content ."
-            ;
-            margin-bottom: 16px;
-            
-        }
-        
-        .order-details{
-
-            background-color: white;
-            margin-left: 16px;
-            margin-right: 16px;
-            border-radius: 20px;
-            
-
-            hr{
-                display: flex;
-            }
-
-            .orders{
-            grid-area: orders;
-            }
-
-            .cost{
-                grid-area: cost;
-                text-align: right;
-                padding-right: 16px;
-                padding-top: 65px;
-            
-                p{
-                    font-size: 16px;
-                    padding-bottom: 1.5px;
-                    padding-right: 8px;
-                    
-                }
-
-                
-                h4{
-                    padding-top: 10px;
-                    padding-right: 8px;
-                }
-                
-            }
-
-            
-            display: grid;
-            grid-template-columns: 80% 20% ;
-            grid-template-areas: " orders cost ";
-        
-        }
-    }
-
-
+    
     .checkout{
         
+        @include lg{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "cart cart shipping"
+            "pay pay reviews-checkout"
+            "button button button"
+        }
        
         padding-top: 150px;
 
+        .cart-checkout{
+        
+            grid-area: cart;
+            
+    
+            .content{
+                grid-area:content;
+                background-color: white;
+                padding-left: 16px;
+                border-radius: 20px;
+                h2{
+                font-size: 24px;
+                
+                
+                }
+    
+                p{
+                    font-size: 16px;
+                    
+                }
+            
+            }
+            
+            .container{
+                display:grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas:
+                ". content ."
+                ;
+                margin-bottom: 16px;
+                
+            }
+            
+            .order-details{
+                
+                background-color: white;
+                margin-left: 16px;
+                margin-right: 16px;
+                border-radius: 20px;
+                
+    
+                hr{
+                    display: flex;
+                }
+    
+                .orders{
+                 grid-area: orders;
+                }
+    
+                .cost{
+                    grid-area: cost;
+                    text-align: right;
+                    padding-right: 16px;
+                    padding-top: 65px;
+                
+                    p{
+                        font-size: 16px;
+                        padding-bottom: 1.5px;
+                        padding-right: 8px;
+                        
+                    }
+    
+                    
+                    h4{
+                        padding-top: 10px;
+                        padding-right: 8px;
+                    }
+                    
+                }
+    
+                
+                display: grid;
+                grid-template-columns: 80% 20% ;
+                grid-template-areas: " orders cost ";
+            
+            }
+        }
+
         .pay{
+            grid-area: pay;
             margin-top: 16px;
             .content{
+                
                 grid-area:content;
                 background-color: white;
                 border-radius: 20px;
@@ -145,18 +147,21 @@
 
         .shipping{
             
-            
+            grid-area: shipping;
 
             
 
             .content{
                 grid-area:content;
                 
+                
                 border-radius: 20px;
                 background-color: white;
                 padding-left: 32px;
                 padding-right: 32px;
                 padding-bottom: 40px;
+
+                
 
                 h2{
                     font-size: 32px; 
@@ -197,8 +202,9 @@
         }
 
         .reviews-checkout{
-            
+            grid-area: reviews-checkout;
             .content{
+               
                background-color: white;
                border-radius: 20px;
                grid-area:content;
@@ -219,7 +225,7 @@
         }
 
         .button-submit{
-            
+            grid-area: button;
             .button{
                
                 .content{
