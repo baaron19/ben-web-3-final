@@ -908,13 +908,13 @@ nav ul li:first-child {
     Checkout
 ============= */
 .checkout {
-  padding-top: 150px;
+  padding-top: 300px;
 }
 @media (min-width: 992px) {
   .checkout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "cart cart shipping" "pay pay reviews-checkout" "button button button";
+    grid-template-areas: " cart cart shipping " " pay pay reviews-checkout " " button button button ";
   }
 }
 .checkout .cart-checkout {
@@ -939,6 +939,7 @@ nav ul li:first-child {
   margin-bottom: 16px;
 }
 .checkout .cart-checkout .order-details {
+  font-family: "Open Sans", sans-serif;
   background-color: white;
   margin-left: 16px;
   margin-right: 16px;
@@ -954,7 +955,8 @@ nav ul li:first-child {
   .checkout .cart-checkout .order-details {
     padding-top: 50px;
     padding-bottom: 120px;
-    padding-right: 20px;
+    padding-right: 40px;
+    margin-left: 100px;
   }
 }
 .checkout .cart-checkout .order-details hr {
@@ -968,15 +970,18 @@ nav ul li:first-child {
   text-align: right;
   padding-right: 16px;
   padding-top: 65px;
+  font-family: "Open Sans", sans-serif;
 }
 .checkout .cart-checkout .order-details .cost p {
   font-size: 16px;
   padding-bottom: 1.5px;
   padding-right: 8px;
+  font-family: "Open Sans", sans-serif;
 }
 .checkout .cart-checkout .order-details .cost h4 {
   padding-top: 10px;
   padding-right: 8px;
+  font-family: "Open Sans", sans-serif;
 }
 .checkout .pay {
   grid-area: pay;
@@ -987,16 +992,17 @@ nav ul li:first-child {
   background-color: white;
   border-radius: 20px;
   padding-bottom: 65px;
+  font-family: "Open Sans", sans-serif;
 }
 @media (min-width: 992px) {
   .checkout .pay .content {
     padding-top: 20px;
-    margin-top: -16px;
+    padding-left: 20px;
+    margin-left: 85px;
   }
 }
 .checkout .pay .content img {
   padding-top: 16px;
-  padding-left: 55px;
   margin-bottom: 50px;
 }
 .checkout .pay .content a {
@@ -1031,6 +1037,11 @@ nav ul li:first-child {
   padding-right: 32px;
   padding-bottom: 40px;
 }
+@media (min-width: 992px) {
+  .checkout .shipping .content {
+    margin-right: 100px;
+  }
+}
 .checkout .shipping .content h2 {
   font-size: 32px;
 }
@@ -1041,6 +1052,12 @@ nav ul li:first-child {
 .checkout .shipping .content form input {
   width: 535px;
   height: 30px;
+}
+@media (min-width: 992px) {
+  .checkout .shipping .content form input {
+    width: 235px;
+    height: 30px;
+  }
 }
 .checkout .shipping .content ::placeholder { /* Microsoft Edge*/
   color: #000;
@@ -1061,6 +1078,12 @@ nav ul li:first-child {
   margin-bottom: 40px;
   padding-right: 50px;
 }
+@media (min-width: 992px) {
+  .checkout .reviews-checkout .content {
+    margin-right: 100px;
+    margin-top: 15px;
+  }
+}
 .checkout .reviews-checkout .container {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -1072,6 +1095,12 @@ nav ul li:first-child {
 .checkout .button-submit .button .content {
   grid-area: content;
   margin-bottom: 120px;
+}
+@media (min-width: 992px) {
+  .checkout .button-submit .button .content {
+    margin-right: 100px;
+    margin-left: 80px;
+  }
 }
 .checkout .button-submit .button .content a {
   color: #000;
