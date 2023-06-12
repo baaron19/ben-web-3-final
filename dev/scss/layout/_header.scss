@@ -11,23 +11,36 @@ header.container{
     .content{
 
         display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-areas: "logo burger";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "burger logo search ";
 
         @include lg{
-            grid-template-areas: "logo nav";
+            grid-template-areas: "nav logo search";
 
         }
 
         .logo{
             color: $black;
             font-size: 40px;
+            grid-area: logo;
+            padding-right: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search{
+            grid-area: search;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+            padding-top: 20px;
         }
 
         .burger-container{
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: center;
+            padding-left: 20px;
 
             @include lg{
                 display: none;
